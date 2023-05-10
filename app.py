@@ -2,11 +2,6 @@ import streamlit as st
 from src.extraction import load_data
 
 st.set_page_config(layout='wide')
-
-def main():
-    df_raw = load_data()
-
-    st.dataframe(df_raw)
     
 def create_dataframe_section(df):
     st.title("Database Section")
@@ -63,6 +58,11 @@ def create_answers_section(df):
     st.subheader("Which bikes are good for buying?")
     
     return None
+
+def main():
+    df_raw = load_data()
+
+    st.dataframe(df_raw)
     
 if __name__ == '__main__':
     main()
