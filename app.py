@@ -17,6 +17,7 @@ def create_dataframe_section(df):
     data_description = """
                         | Coluna | Descrição |
                         | :----- | --------: |
+                        
                         | ID | Identificador da linha/registro |
                         | name | Fabricante e Modelo da Moto |
                         | selling_price | Preço de Venda |
@@ -37,6 +38,7 @@ def create_dataframe_section(df):
     return None
     
 def create_answers_section(df):
+    
     st.title("Main Questions Answers")
 
     st.header("First Round")
